@@ -57,14 +57,14 @@ $deps_regions = array_slice($csvData, 1);
                     <select id="." class="form-select mb-2" aria-label="Default select example">
                         <option disabled selected>Votre région de résidence</option>
                         <?php $tps = [];
-                        foreach ($deps_regions as $departement) {
-                            if (!in_array($departement[2],$tps)) {
-                                if ($departement[2]!='NULL'){
-                                  echo "<option value=\"$departement[2]\">$departement[2] $departement[3]</option>";  
+                        foreach ($deps_regions as $region) {
+                            if (!in_array($region[2],$tps)) {
+                                if ($region[2]!='NULL'){
+                                  echo "<option value=\"$region[2]\">$region[2] $region[3]</option>";  
                                 }
                                 
                             }
-                            array_push($tps,$departement[2]);
+                            array_push($tps,$region[2]);
                         }
                         ?>
                     </select>
