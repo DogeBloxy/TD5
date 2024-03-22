@@ -47,7 +47,7 @@ $deps_regions = array_slice($csvData, 1);
                     </div>
                     <label class="mb-2" for=".">Département</label>
                     <select id="." class="form-select mb-2" aria-label="Default select example">
-                        <option selected>Votre département de résidence</option>
+                        <option disabled selected>Votre département de résidence</option>
                         <?php foreach ($deps_regions as $departement) {
                             echo "<option value=\"$departement[0]\">$departement[0] $departement[1]</option>";
                         }
@@ -55,7 +55,7 @@ $deps_regions = array_slice($csvData, 1);
                     </select>
                     <label class="mb-2" for=".">Région</label>
                     <select id="." class="form-select mb-2" aria-label="Default select example">
-                        <option selected>Votre région de résidence</option>
+                        <option disabled selected>Votre région de résidence</option>
                         <?php $tps = [];
                         foreach ($deps_regions as $departement) {
                             if (!in_array($departement[2],$tps)) {
