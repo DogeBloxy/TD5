@@ -42,8 +42,8 @@ $deps_regions = array_slice($csvData, 1);
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Date de naissance</label>
-                        <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <label for="exampleInputDate" class="form-label">Date de naissance</label>
+                        <input type="date" class="form-control" id="exampleInputDate" aria-describedby="dateHelp">
                     </div>
                     <label class="mb-2" for=".">Département</label>
                     <select id="." class="form-select mb-2" aria-label="Default select example">
